@@ -63,7 +63,7 @@ jobs:
        - name: Sleep for 60 seconds
          uses: jakejarvis/wait-action@master
          with:
-           time: '6s'
+           time: '60s'
        - name: build scan
          if: ${{ true }}
          run: |
