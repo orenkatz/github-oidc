@@ -79,5 +79,5 @@ jobs:
           # need to set this value, if it is set in the frogbot-config.yml file.
           # JF_DEPS_REPO: ""
           # JF_PROJECT: ${{ vars.JF_PROJECT }}
-          JF_INCLUDE_ALL_VULNERABILITIES: true
-          JF_WATCHES: oren
+          # JF_INCLUDE_ALL_VULNERABILITIES: true
+          JF_WATCHES: oren        
