@@ -39,14 +39,15 @@ jobs:
            oidc-provider-name: ${{ env.OIDC_PROVIDER }}
            oidc-audience: ${{ env.OIDC_AUDIENCE }}
 
-       - name: Curation
-         run: jf ca || true
        - name: Set CLI Config
          run: jf npm-config --global=true --repo-resolve=$PLATFORM_REPO --repo-deploy=$PLATFORM_REPO
            
        - name: Install Dependencies
          run: jf npm install
-           
+
+       - name: Curation
+         run: jf ca || true
+         
        - name: Run tests
          run: npm test
          
