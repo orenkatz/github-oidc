@@ -13,7 +13,7 @@ name: "Frogbot Scan Pull Request"
 on:    
   workflow_dispatch: # The repository will be scanned on demand
 permissions:
-  pull-requests: write
+  # pull-requests: write
   contents: read
   id-token: write
   security-events: write
@@ -79,4 +79,4 @@ jobs:
           # JF_DEPS_REPO: ""
           # JF_PROJECT: ${{ vars.JF_PROJECT }}
           # JF_INCLUDE_ALL_VULNERABILITIES: true
-          JF_WATCHES: oren        
+          JF_WATCHES: "oren"       
