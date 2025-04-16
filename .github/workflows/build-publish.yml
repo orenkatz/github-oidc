@@ -44,7 +44,10 @@ jobs:
            
        - name: Install Dependencies
          run: jf npm install
-           
+
+       - name: Curation
+         run: jf ca || true
+         
        - name: Run tests
          run: npm test
          
